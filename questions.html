@@ -5,72 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>שאלות ותשובות</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function toggleAnswer(id) {
-            const answerElement = document.getElementById(id);
-            answerElement.style.display = (answerElement.style.display === 'none') ? 'block' : 'none';
-        }
-    </script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>שאלות ותשובות - פרויקט סיום</h1>
     </header>
     <main>
-        <section>
-            <h2 onclick="toggleAnswer('answer1')" style="cursor: pointer;">שאלה 1</h2>
-            <div id="answer1" style="display: none;">
+        <section class="qa-section">
+            <div class="question" onclick="toggleAnswer('answer1')">
+                <h2>שאלה 1: הרחבות שאילתא ואחזור ממוין</h2>
+            </div>
+            <div id="answer1" class="answer" style="display: none;">
                 <img src="screenshots/q1_1_answer.png" alt="תוצאה לשאלה 1 חלק 1">
                 <img src="screenshots/q1_2_answer.png" alt="תוצאה לשאלה 1 חלק 2">
                 <img src="screenshots/q1_3_answer.png" alt="תוצאה לשאלה 1 חלק 3">
             </div>
         </section>
-        <section>
-            <h2 onclick="toggleAnswer('answer2a')" style="cursor: pointer;">שאלה 2 סעיף א</h2>
-            <div id="answer2a" style="display: none;">
-                <img src="screenshots/q2a1_answer.png" alt="תוצאה לשאלה 2 סעיף א חלק 1">
-                <img src="screenshots/q2a2_answer.png" alt="תוצאה לשאלה 2 סעיף א חלק 2">
+        
+        <section class="qa-section">
+            <div class="question" onclick="toggleAnswer('answer2a')">
+                <h2>שאלה 2: Link Analysis - סעיף א</h2>
+            </div>
+            <div id="answer2a" class="answer" style="display: none;">
+                <img src="screenshots/q2a1_answer.png" alt="תוצאה לסעיף א בשאלה 2">
+                <img src="screenshots/q2a2_answer.png" alt="תוצאה לסעיף א בשאלה 2">
             </div>
         </section>
-        <section>
-            <h2 onclick="toggleAnswer('answer2b')" style="cursor: pointer;">שאלה 2 סעיף ב</h2>
-            <div id="answer2b" style="display: none;">
-                <img src="screenshots/q2b1_answer.png" alt="תוצאה לשאלה 2 סעיף ב חלק 1">
-                <img src="screenshots/q2b2_answer.png" alt="תוצאה לשאלה 2 סעיף ב חלק 2">
+
+        <section class="qa-section">
+            <div class="question" onclick="toggleAnswer('answer2b')">
+                <h2>שאלה 2: Link Analysis - סעיף ב</h2>
+            </div>
+            <div id="answer2b" class="answer" style="display: none;">
+                <img src="screenshots/q2b1_answer.png" alt="תוצאה לסעיף ב בשאלה 2">
+                <img src="screenshots/q2b2_answer.png" alt="תוצאה לסעיף ב בשאלה 2">
             </div>
         </section>
-        <section>
-            <h2 onclick="toggleAnswer('answer3a')" style="cursor: pointer;">שאלה 3 סעיף א</h2>
-            <div id="answer3a" style="display: none;">
+
+        <section class="qa-section">
+            <div class="question" onclick="toggleAnswer('answer3a')">
+                <h2>שאלה 3: קדם פרויקט - סעיף א</h2>
+            </div>
+            <div id="answer3a" class="answer" style="display: none;">
                 <img src="screenshots/q3a_question.png" alt="שאלה 3 סעיף א שאלה">
                 <img src="screenshots/q3a_answer.png" alt="תוצאה לשאלה 3 סעיף א">
             </div>
         </section>
-        <section>
-            <h2 onclick="toggleAnswer('answer3b')" style="cursor: pointer;">שאלה 3 סעיף ב</h2>
-            <div id="answer3b" style="display: none;">
+
+        <section class="qa-section">
+            <div class="question" onclick="toggleAnswer('answer3b')">
+                <h2>שאלה 3: קדם פרויקט - סעיף ב</h2>
+            </div>
+            <div id="answer3b" class="answer" style="display: none;">
                 <img src="screenshots/q3b_question.png" alt="שאלה 3 סעיף ב שאלה">
                 <img src="screenshots/q3b_answer.png" alt="תוצאה לשאלה 3 סעיף ב">
             </div>
         </section>
-        <section>
-            <h2 onclick="toggleAnswer('answer3c')" style="cursor: pointer;">שאלה 3 סעיף ג</h2>
-            <div id="answer3c" style="display: none;">
+
+        <section class="qa-section">
+            <div class="question" onclick="toggleAnswer('answer3c')">
+                <h2>שאלה 3: קדם פרויקט - סעיף ג</h2>
+            </div>
+            <div id="answer3c" class="answer" style="display: none;">
                 <img src="screenshots/q3c_question.png" alt="שאלה 3 סעיף ג שאלה">
                 <img src="screenshots/q3c_answer.png" alt="תוצאה לשאלה 3 סעיף ג">
             </div>
         </section>
-        <section>
-            <h2 onclick="toggleAnswer('answer3d')" style="cursor: pointer;">שאלה 3 סעיף ד</h2>
-            <div id="answer3d" style="display: none;">
+
+        <section class="qa-section">
+            <div class="question" onclick="toggleAnswer('answer3d')">
+                <h2>שאלה 3: קדם פרויקט - סעיף ד</h2>
+            </div>
+            <div id="answer3d" class="answer" style="display: none;">
                 <img src="screenshots/q3d_question.png" alt="שאלה 3 סעיף ד שאלה">
                 <img src="screenshots/q3d_answer.png" alt="תוצאה לשאלה 3 סעיף ד">
             </div>
         </section>
-        <section>
-            <h2 onclick="toggleAnswer('answer3e')" style="cursor: pointer;">שאלה 3 סעיף ה</h2>
-            <div id="answer3e" style="display: none;">
+
+        <section class="qa-section">
+            <div class="question" onclick="toggleAnswer('answer3e')">
+                <h2>שאלה 3: קדם פרויקט - סעיף ה</h2>
+            </div>
+            <div id="answer3e" class="answer" style="display: none;">
                 <img src="screenshots/q3e_question.png" alt="שאלה 3 סעיף ה שאלה">
                 <img src="screenshots/q3e_answer.png" alt="תוצאה לשאלה 3 סעיף ה">
             </div>
-        </section>\n    </main>\n</body>\n</html>"
+        </section>
+    </main>
+</body>
+</html>
