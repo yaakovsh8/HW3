@@ -3,60 +3,55 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
 
 header {
-    background: #004080;
-    color: #fff;
+    background-color: #004080;
+    color: white;
+    padding: 1.5rem;
     text-align: center;
-    padding: 10px 0;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
 }
 
 main {
+    padding: 1rem;
     max-width: 800px;
-    margin: 20px auto;
-    padding: 10px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
 .qa-section {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
-.question {
-    background: #004080;
-    color: #fff;
-    padding: 10px;
+.qa-section .question {
+    background-color: #004080;
+    color: white;
+    padding: 0.8rem;
+    margin: 1rem 0;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
+    text-align: center;
 }
 
-.question:hover {
-    background: #0059b3;
-}
-
-.answer {
-    margin-top: 10px;
-    padding: 10px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
+.qa-section .answer {
+    border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #fff;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    display: none;
 }
 
-.answer img {
+img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    display: block;
+    margin: 0.5rem auto;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
