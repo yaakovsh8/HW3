@@ -1,35 +1,81 @@
+/* עיצוב כללי לדף */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
+/* כותרת עליונה */
 header {
-    background-color: #4CAF50;
+    background-color: #004080; /* כחול כהה */
     color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* עיצוב ראשי */
+main {
     padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* כותרות שאלות */
+section h2 {
+    background-color: #004080;
+    color: white;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    cursor: pointer;
     text-align: center;
 }
 
-h1, h2 {
-    margin: 0;
-    padding: 0.5rem 0;
-}
-
-main {
+/* קופסת תוכן תשובות */
+section div {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
     padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: none; /* מוסתר כברירת מחדל */
 }
 
-section {
-    margin-bottom: 2rem;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 1rem;
-}
-
+/* עיצוב תמונות */
 img {
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 0.5rem auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* כפתורים */
+button {
+    display: inline-block;
+    background-color: #004080;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     margin: 0.5rem 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0059b3;
 }
