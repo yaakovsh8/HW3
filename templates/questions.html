@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>שאלות ותשובות</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
     <script src="/static/script.js" defer></script>
 </head>
 <body>
@@ -12,86 +12,57 @@
         <h1>שאלות ותשובות - פרויקט סיום</h1>
     </header>
     <main>
+        <!-- שאלה 1 -->
         <section class="qa-section">
-            <div class="question" onclick="toggleAnswer('answer1')">
-                <h2>שאלה 1: הרחבות שאילתא ואחזור ממוין</h2>
+            <div class="question" onclick="toggleAnswer('q1')">
+                <h2><a href="#q1">שאלה 1: הרחבות שאילתא ואחזור ממוין</a></h2>
             </div>
-            <div id="answer1" class="answer" style="display: none;">
+            <div id="q1" class="answer" style="display: none;">
+                <h3><a href="#q1-question">שאלה 1</a></h3>
                 <img src="/static/screenshots/q1_1_answer.png" alt="תוצאה לשאלה 1 חלק 1">
                 <img src="/static/screenshots/q1_2_answer.png" alt="תוצאה לשאלה 1 חלק 2">
                 <img src="/static/screenshots/q1_3_answer.png" alt="תוצאה לשאלה 1 חלק 3">
             </div>
         </section>
-        
+
+        <!-- שאלה 2 סעיף א -->
         <section class="qa-section">
-            <div class="question" onclick="toggleAnswer('answer2a')">
-                <h2>שאלה 2: Link Analysis - סעיף א</h2>
+            <div class="question" onclick="toggleAnswer('q2a')">
+                <h2><a href="#q2a">שאלה 2: Link Analysis - סעיף א</a></h2>
             </div>
-            <div id="answer2a" class="answer" style="display: none;">
+            <div id="q2a" class="answer" style="display: none;">
+                <h3><a href="#q2a-question">שאלה 2 סעיף א</a></h3>
                 <img src="/static/screenshots/q2a1_answer.png" alt="תוצאה לסעיף א בשאלה 2">
                 <img src="/static/screenshots/q2a2_answer.png" alt="תוצאה לסעיף א בשאלה 2">
             </div>
         </section>
 
+        <!-- שאלה 2 סעיף ב -->
         <section class="qa-section">
-            <div class="question" onclick="toggleAnswer('answer2b')">
-                <h2>שאלה 2: Link Analysis - סעיף ב</h2>
+            <div class="question" onclick="toggleAnswer('q2b')">
+                <h2><a href="#q2b">שאלה 2: Link Analysis - סעיף ב</a></h2>
             </div>
-            <div id="answer2b" class="answer" style="display: none;">
+            <div id="q2b" class="answer" style="display: none;">
+                <h3><a href="#q2b-question">שאלה 2 סעיף ב</a></h3>
                 <img src="/static/screenshots/q2b1_answer.png" alt="תוצאה לסעיף ב בשאלה 2">
                 <img src="/static/screenshots/q2b2_answer.png" alt="תוצאה לסעיף ב בשאלה 2">
             </div>
         </section>
 
+        <!-- שאלות 3 -->
         <section class="qa-section">
-            <div class="question" onclick="toggleAnswer('answer3a')">
-                <h2>שאלה 3: קדם פרויקט - סעיף א</h2>
+            <div class="question" onclick="toggleAnswer('q3a')">
+                <h2><a href="#q3a">שאלה 3 סעיף א</a></h2>
             </div>
-            <div id="answer3a" class="answer" style="display: none;">
-                <img src="/static/screenshots/q3a_question.png" alt="שאלה 3 סעיף א שאלה">
-                <img src="/static/screenshots/q3a_answer.png" alt="תוצאה לשאלה 3 סעיף א">
+            <div id="q3a" class="answer" style="display: none;">
+                <h3><a href="#q3a-answer">תשובה 3 סעיף א</a></h3>
+                <img src="/static/screenshots/q3a_question.png" alt="שאלה 3 סעיף א">
+                <img src="/static/screenshots/q3a_answer.png" alt="תשובה לשאלה 3 סעיף א">
             </div>
         </section>
+        
+        <!-- ניתן לשכפל את הדפוס לשאר השאלות -->
 
-        <section class="qa-section">
-            <div class="question" onclick="toggleAnswer('answer3b')">
-                <h2>שאלה 3: קדם פרויקט - סעיף ב</h2>
-            </div>
-            <div id="answer3b" class="answer" style="display: none;">
-                <img src="/static/screenshots/q3b_question.png" alt="שאלה 3 סעיף ב שאלה">
-                <img src="/static/screenshots/q3b_answer.png" alt="תוצאה לשאלה 3 סעיף ב">
-            </div>
-        </section>
-
-        <section class="qa-section">
-            <div class="question" onclick="toggleAnswer('answer3c')">
-                <h2>שאלה 3: קדם פרויקט - סעיף ג</h2>
-            </div>
-            <div id="answer3c" class="answer" style="display: none;">
-                <img src="/static/screenshots/q3c_question.png" alt="שאלה 3 סעיף ג שאלה">
-                <img src="/static/screenshots/q3c_answer.png" alt="תוצאה לשאלה 3 סעיף ג">
-            </div>
-        </section>
-
-        <section class="qa-section">
-            <div class="question" onclick="toggleAnswer('answer3d')">
-                <h2>שאלה 3: קדם פרויקט - סעיף ד</h2>
-            </div>
-            <div id="answer3d" class="answer" style="display: none;">
-                <img src="/static/screenshots/q3d_question.png" alt="שאלה 3 סעיף ד שאלה">
-                <img src="/static/screenshots/q3d_answer.png" alt="תוצאה לשאלה 3 סעיף ד">
-            </div>
-        </section>
-
-        <section class="qa-section">
-            <div class="question" onclick="toggleAnswer('answer3e')">
-                <h2>שאלה 3: קדם פרויקט - סעיף ה</h2>
-            </div>
-            <div id="answer3e" class="answer" style="display: none;">
-                <img src="/static/screenshots/q3e_question.png" alt="שאלה 3 סעיף ה שאלה">
-                <img src="/static/screenshots/q3e_answer.png" alt="תוצאה לשאלה 3 סעיף ה">
-            </div>
-        </section>
     </main>
 </body>
 </html>
